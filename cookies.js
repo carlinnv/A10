@@ -1,6 +1,7 @@
-document.cookie = "visited=0; expires=Thu, 18 Dec 2026 12:00:00 UTC; SameSite=None; Secure";
-
 timesVisited = 0; 
+
+
+document.cookie = "visited=" + timesVisited+"; expires=Thu, 18 Dec 2026 12:00:00 UTC; SameSite=None; Secure";
 
 function showCookies() {
     const output = document.getElementById("cookies"); 
