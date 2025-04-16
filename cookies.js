@@ -18,5 +18,6 @@ function addToCookies() {
 function clearOutputCookies() {
     const output = document.getElementById("cookies"); 
     timesVisited = 0; 
-    output.textContent = ""; 
+    document.cookie = "visited=" + timesVisited+"; expires=Thu, 18 Dec 2026 12:00:00 UTC; SameSite=None; Secure";
+    output.textContent = `> ${document.cookie}`;
 }
