@@ -1,6 +1,6 @@
 document.cookie = "visited=0; SameSite=None; Secure";
 
-const timesVisited = 0; 
+timesVisited = 0; 
 
 function showCookies() {
     const output = document.getElementById("cookies"); 
